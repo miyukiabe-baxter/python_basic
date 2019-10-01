@@ -238,13 +238,81 @@ is_started = False
 
 
 ###### 2D list #######
-numbers = [5, 2, 1, 7, 4, 6, 8]
+numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
+# print(numbers)
+# i = 0
+# while i < len(numbers):
+#     j = 0
+#     while j < len(numbers):
+#         if i != j and numbers[i] == numbers[j]:
+#             numbers.remove(numbers[j])
+#         j += 1
+#     i += 1
+# print(numbers)
+# print(50 in numbers)
+# numbers.remove(numbers[2])
+# print(numbers)
+# print(numbers.count(5))
+# print(numbers.index(5))
+# numbers.sort()  # in-place sort. therefore, this does not return new array.
+# # if you wanna see the result, you need to print the original array
+# numbers.reverse()  # reversing the sorted array
+# numbers2 = numbers.copy  # making copy. javascript numbers2 = [...numbers]
+# print(numbers)
 
-print(50 in numbers)
-print(numbers.count(5))
-print(numbers.index(5))
-numbers.sort()  # in-place sort. therefore, this does not return new array.
-# if you wanna see the result, you need to print the original array
-numbers.reverse()  # reversing the sorted array
-numbers2 = numbers.copy  # making copy. javascript numbers2 = [...numbers]
-print(numbers)
+# numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
+# unique = []
+
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
+# print(unique)
+
+# Tuples #####  immutable data
+numbers = [1, 2, 3, 4, 5]  # mutable. I can access to append, pop,,,etc method.
+# this is immutable. so cannot access to methods which change the array.
+immutable_nums = (1, 2, 3, 4, 5)
+print(immutable_nums.count(1))
+
+coordinates = (1, 2, 3)
+# we can re-assign like below or
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+
+# unpack like below
+x, y, z = coordinates
+print(x, y, z)
+
+### dictonary - key value pair - Object - Map....etc ###
+# customer = {
+#     "name": "Miyuki",
+#     "age": 32,
+#     "is_verified": True
+# }
+# print(customer["name"])
+# print(customer.get("name"))
+# # if birthday does not exist, provide Aug 9th as a default
+# print(customer.get('birthday', 'Aug 9th'))
+# customer["name"] = "Billy"  # updating info.
+# customer["birthday"] = "July 19th"  # adding key-value
+# print(customer)
+
+numbers_list = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "Seven",
+    "8": "Eight",
+    "9": "Nine"
+}
+
+user_phone_number = input("Phone: ")
+user_number = ""
+
+# for num in user_phone_number:
+#     user_phone_number += numbers_list[num]
+# print(user_phone_number)
