@@ -158,9 +158,8 @@
 # else:
 #     print('You lost!!!')
 
-
-menu = ""
-is_started = False
+# menu = ""
+# is_started = False
 
 # while True:
 #     menu = input("> ").lower()
@@ -238,7 +237,7 @@ is_started = False
 
 
 ###### 2D list #######
-numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
+##numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
 # print(numbers)
 # i = 0
 # while i < len(numbers):
@@ -357,6 +356,7 @@ numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
 
 # print(square(3))
 
+###### handling error ######
 # try:
 #     age = int(input('Age: '))
 #     income = 50000
@@ -368,3 +368,87 @@ numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
 #     print('Invalid value')
 # except:  # every other error goes into this block
 #     print('Something went wrong')
+
+
+### Class ######
+
+# class Point:
+#     def __init__(self, x, y):  # this is equivalent to constructor. initializing an object
+#         self.x = x
+#         self.y = y
+
+#     def move(self):
+#         print("move")
+
+#     def draw(self):
+#         print("draw")
+
+
+# point1 = Point(101, 8)
+# print(point1.x)
+# point1.move()
+# point1.draw()
+
+# print(point1)
+# point2 = Point(1, 3)
+
+# print(f'point1.x is {point1.x}. point2.x is {point2.x}')
+
+# class Person:
+#     def __init__(self, first_name, last_name, gender, age):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.gender = gender
+#         self.age = age
+
+#     def introduce_self(self):
+#         print(f'Hi! My name is {self.first_name}. Nice to Meet you')
+
+
+# miyuki = Person('miyuki', 'abe', 'f', 32)
+# miyuki.introduce_self()
+
+### Class inheritance ####
+# class Mammal:
+#     def walk(self):
+#         print("walk")
+
+
+# class Dog(Mammal):
+#     # pass if we are not putting anyting, we say "pass"
+#     def bark(self):
+#         print("bark")
+
+
+# class Cat(Mammal):
+#     pass
+
+
+# test_cat = Cat()
+# test_cat.walk()
+# # test_cat.bark()  # cat does not have bark method.
+
+# test_dog = Dog()
+# test_dog.bark()
+
+#### module ####
+# import utility <-- everything is accessible
+# from utility import lbs_to_kg  # <--if you wann import specific one
+
+# from utility import lbs_to_kg
+# from utility import find_max
+# import utility
+
+# print(utility.kg_to_lbs(45))
+# print(lbs_to_kg(100))
+
+# print(find_max([3, 2, 7, 9, 3]))
+
+### what is a package? ###
+# imagine department store. we have women, men, children section.
+# we write different modules for each section but as a whole, it is e-commerce site and it is one package.
+# we can organize "python package with specific file name convention"
+# create package folder "package_example". Then, create a file name "__init__.py"
+# I can import them like,,,,,
+###from package_example.woman import woman_clothes
+###import package_example.woman
