@@ -269,20 +269,20 @@ numbers = [5, 2, 5, 5, 5, 5, 7, 4, 5, 6, 8, 9, 8]
 # print(unique)
 
 # Tuples #####  immutable data
-numbers = [1, 2, 3, 4, 5]  # mutable. I can access to append, pop,,,etc method.
-# this is immutable. so cannot access to methods which change the array.
-immutable_nums = (1, 2, 3, 4, 5)
-print(immutable_nums.count(1))
+# numbers = [1, 2, 3, 4, 5]  # mutable. I can access to append, pop,,,etc method.
+# # this is immutable. so cannot access to methods which change the array.
+# immutable_nums = (1, 2, 3, 4, 5)
+# print(immutable_nums.count(1))
 
-coordinates = (1, 2, 3)
-# we can re-assign like below or
-x = coordinates[0]
-y = coordinates[1]
-z = coordinates[2]
+# coordinates = (1, 2, 3)
+# # we can re-assign like below or
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
 
 # unpack like below
-x, y, z = coordinates
-print(x, y, z)
+# x, y, z = coordinates
+# print(x, y, z)
 
 ### dictonary - key value pair - Object - Map....etc ###
 # customer = {
@@ -291,28 +291,80 @@ print(x, y, z)
 #     "is_verified": True
 # }
 # print(customer["name"])
-# print(customer.get("name"))
+# print(customer.get("name")) ## does not return error when "name" does not exist
 # # if birthday does not exist, provide Aug 9th as a default
 # print(customer.get('birthday', 'Aug 9th'))
 # customer["name"] = "Billy"  # updating info.
 # customer["birthday"] = "July 19th"  # adding key-value
 # print(customer)
 
-numbers_list = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five",
-    "6": "Six",
-    "7": "Seven",
-    "8": "Eight",
-    "9": "Nine"
-}
+# numbers_list = {
+#     "0": "Zero",
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four",
+#     "5": "Five",
+#     "6": "Six",
+#     "7": "Seven",
+#     "8": "Eight",
+#     "9": "Nine"
+# }
 
-user_phone_number = input("Phone: ")
-user_number = ""
+# user_phone_number = input("Phone: ")
+# user_number = ""
 
 # for num in user_phone_number:
-#     user_phone_number += numbers_list[num]
-# print(user_phone_number)
+#     user_number += f'{numbers_list.get(num, "No")}-'
+# print(user_number[:-1])
+
+### Emoji Converter ###
+
+
+# def emoji_converter(message):
+#     words = message.split(' ')
+#     emoji = {
+#         ":)": "😆",
+#         ":(": "😢"
+#     }
+
+#     finalWord = ""
+#     for word in words:
+#         finalWord += emoji.get(word, word + " ")
+
+#     return finalWord
+
+
+# print(emoji_converter(input("> ")))
+
+
+# Function ##### In Python, we use "def" to define function. not function
+
+
+# def greet_user(first_name="Bob", last_name="B"):
+#     print(f'Hi there {last_name}, {first_name}!!!!')
+#     print('Welcome')
+
+
+# print("start")
+# greet_user('Miyuki', "Abe")
+# greet_user()
+# print("finish")
+
+# def square(number):
+#     return number * number
+
+
+# print(square(3))
+
+# try:
+#     age = int(input('Age: '))
+#     income = 50000
+#     risk = income / age
+#     print(age)
+# except ZeroDivisionError:
+#     print('Age cannot be 0')
+# except ValueError:
+#     print('Invalid value')
+# except:  # every other error goes into this block
+#     print('Something went wrong')
