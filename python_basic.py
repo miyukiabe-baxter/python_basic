@@ -452,3 +452,57 @@
 # I can import them like,,,,,
 ###from package_example.woman import woman_clothes
 ###import package_example.woman
+
+# built in module #### Detail is in python 3 module index
+# we can access to build in modules like generating random number
+# import random
+
+# for i in range(3):
+#     print(random.random())
+
+# for i in range(3):
+#     print(random.randint(10, 20))
+
+# members = ['Miyu', 'Billy', 'Kochi']
+# leader = random.choice(members)
+# print(leader)
+
+# import random
+
+
+# class Dice:
+#     def roll(self):
+#         x = random.randint(1, 6)
+#         y = random.randint(1, 6)
+#         return x, y  # as a defult, Python thinks it is Tuples. if you want list, need to wrap with []
+
+
+# test_dice = Dice()
+# print(test_dice.roll())
+
+# from pathlib import Path
+
+# Absolute path : full address. Possible that the file is in the internet
+# Relative path : the file has to be on local.
+
+# Path class takes direcotry as an argument. as a defult, it takes current directory.
+# path = Path()
+# path1 = Path('package_example1')
+
+# To create "email" directory, pass it as an argument and say mkdir on the returned object
+# path2 = Path('emails')
+# Path('another').mkdir()
+# path2.mkdir()
+# path2.rmdir()
+
+# print(path.exists())
+# print(path1.exists())
+
+# path.glob('*.py')  # all python file list
+# path.glob('*')  # all file
+# path.glob('*.js')  # all JS file
+
+# for file in path.glob('*'):
+#     print(file)
+
+## Installing Pipy package as a practice ##
